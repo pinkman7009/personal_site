@@ -38,13 +38,24 @@ export const P = styled.p`
         return 400;
       case 'bold':
         return 700;
+      case 'light':
+        return 300;
       default:
         return 400;
     }
   }};
 
   text-align: ${(props) => (props.textAlign ? props.textAlign : 'left')};
-  color: ${(props) => (props.color ? '#42ffa4' : '#fff')};
+  color: ${(props) => {
+    switch (props.color) {
+      case 'primary':
+        return '#42ffa4';
+      case 'black':
+        return '#000';
+      default:
+        return '#fff';
+    }
+  }};
   @media screen and (max-width: 768px) {
     font-size: ${(props) => {
       switch (props.size) {
@@ -143,7 +154,16 @@ export const H2 = styled.h2`
         return 400;
     }
   }};
-  color: ${(props) => (props.color ? '#42ffa4' : '#fff')};
+  color: ${(props) => {
+    switch (props.color) {
+      case 'primary':
+        return '#42ffa4';
+      case 'black':
+        return '#000';
+      default:
+        return '#fff';
+    }
+  }};
 
   text-align: ${(props) => (props.textAlign ? props.textAlign : 'left')};
   margin: ${(props) => (props.margin ? props.margin : 0)};
