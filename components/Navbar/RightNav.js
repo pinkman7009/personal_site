@@ -1,12 +1,24 @@
 import React from 'react';
 import { Ul } from '../../elements/NavbarElements';
-
+import { Link } from 'react-scroll';
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Contact</li>
+      <li>
+        <Link to='about' smooth={true}>
+          About
+        </Link>
+      </li>
+      <li>
+        <Link to='projects' smooth={true}>
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link to='contact' smooth={true}>
+          Contact
+        </Link>
+      </li>
     </Ul>
   );
 };

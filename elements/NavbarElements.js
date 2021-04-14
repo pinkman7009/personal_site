@@ -1,8 +1,18 @@
 import styled from 'styled-components';
 
-export const Nav = styled.nav`
+export const NavWrapper = styled.nav`
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: ${(props) => (props.scroll === false ? '150px' : '100px')};
+
+  background: ${(props) =>
+    props.scroll === false ? 'transparent' : 'rgb(0,0,0,0.5)'};
+  transition: all 0.3s ease;
+`;
+export const Nav = styled.div`
   max-width: 1500px;
-  height: 150px;
+  height: 100%;
   padding: 20px;
   margin: 0 auto;
   display: flex;
@@ -21,6 +31,15 @@ export const Ul = styled.ul`
     color: #fff;
     font-size: 1.2rem;
     margin: 0 2rem;
+    cursor: pointer;
+
+    > * {
+      transition: all 0.5s ease;
+    }
+
+    > *:hover {
+      color: #42ffa4;
+    }
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -51,7 +70,7 @@ export const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? '#ccc' : '#333')};
+    background-color: ${({ open }) => (open ? '#ccc' : '#fff')};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -69,6 +88,8 @@ export const StyledBurger = styled.div`
 `;
 
 export const Logo = styled.div`
+  /* position: fixed;
+  z-index: 20; */
   height: 80px;
   width: 80px;
   border-radius: 50%;
@@ -77,6 +98,7 @@ export const Logo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     height: 50px;

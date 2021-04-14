@@ -2,17 +2,18 @@
 html,
 body {
   font-family: 'Poppins', sans-serif;
-  background: -webkit-linear-gradient(
+}
+body {
+  background: linear-gradient(
     124.06deg,
     #0a215c -2.07%,
     rgba(18, 121, 165, 0.67) 104.93%
   );
 }
-
-body {
-  height: 100vh;
+a {
+  text-decoration: none;
+  color: #fff;
 }
-
 * {
   padding: 0;
   margin: 0;
