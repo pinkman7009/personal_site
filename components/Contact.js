@@ -20,7 +20,7 @@ const Contact = () => {
           <img src='contact.svg' alt='soumik-contact' className='contact-img' />
         </ContactImageWrapper>
 
-        <form action='POST' className='contact-form' data-netlify='true'>
+        <form method='POST' className='contact-form' data-netlify='true'>
           <input
             type='text'
             name='name'
