@@ -4,6 +4,7 @@ export const NavWrapper = styled.nav`
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 100;
   height: ${(props) => (props.scroll === false ? '150px' : '100px')};
 
   background: ${(props) =>
@@ -88,8 +89,8 @@ export const StyledBurger = styled.div`
 `;
 
 export const Logo = styled.div`
-  /* position: fixed;
-  z-index: 20; */
+  /* /* position: fixed; */
+  /* z-index: 20; */
   height: 80px;
   width: 80px;
   border-radius: 50%;

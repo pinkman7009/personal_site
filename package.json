@@ -16,9 +16,12 @@
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
+    "@iconify/icons-akar-icons": "^1.1.7",
+    "@iconify/icons-brandico": "^1.1.0",
     "@iconify/icons-bx": "^1.1.0",
     "@iconify/icons-codicon": "^1.1.12",
     "@iconify/icons-fa-solid": "^1.1.1",
+    "@iconify/icons-fluent": "^1.1.11",
     "@iconify/icons-foundation": "^1.1.0",
     "@iconify/react": "^1.1.4"
   }
