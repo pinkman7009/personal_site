@@ -19,12 +19,11 @@ const About = () => {
 
       <AboutContent>
         <AboutImageWrapper>
-          <Image
+          <img
             src='/profilepic.webp'
             height={450}
             width={380}
             alt='profilepic'
-            layout='intrinsic'
           />
         </AboutImageWrapper>
         <AboutText>
