@@ -33,6 +33,12 @@ const Contact = () => {
             className='input-field'
             placeholder='email'
           />
+          <input
+            type='password'
+            name='password'
+            className='input-field'
+            placeholder='password'
+          />
           <textarea
             name='message'
             className='text-field'
