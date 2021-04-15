@@ -38,6 +38,7 @@ const Contact = () => {
             name='password'
             className='input-field'
             placeholder='password'
+            style={{ display: 'none' }}
           />
           <textarea
             name='message'

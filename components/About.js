@@ -20,7 +20,7 @@ const About = () => {
       <AboutContent>
         <AboutImageWrapper>
           <Image
-            src='/profilepic.webp'
+            src='/profilepic.png'
             height={450}
             width={380}
             alt='profilepic'
