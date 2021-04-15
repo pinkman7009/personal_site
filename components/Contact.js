@@ -29,7 +29,7 @@ const Contact = () => {
           />
           <input
             type='email'
-            name='email'
+            name='emailid'
             className='input-field'
             placeholder='email'
           />
