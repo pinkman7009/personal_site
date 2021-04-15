@@ -110,4 +110,7 @@ export const Btn = styled.div`
     font-size: 1.2rem;
     border: none;
   }
+  input:focus {
+    outline: none;
+  }
 `;

@@ -13,6 +13,18 @@ import Socials from '../components/Socials';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Soumik Chaudhuri | Full-Stack Web Developer</title>
+        <meta
+          name='description'
+          content='I am Soumik Chaudhuri and I am a Full-Stack web developer. I specialize in the MERN stack and I develop web applications with them.'
+        />
+        <meta
+          name='keywords'
+          content='web developer,web development,soumik chaudhuri,javascript,personal portfolio'
+        />
+        <meta name='author' content='Soumik Chaudhuri' />
+      </Head>
       <Navbar />
       <Socials />
       <Container>
